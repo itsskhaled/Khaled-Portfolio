@@ -1,0 +1,135 @@
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+
+.containerHero {
+  width: 90vw;
+  height: 100vh;
+  justify-self: center;
+  overflow: visible;
+}
+
+.title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+
+.title h1 {
+  color: white;
+  width: 80vw;
+  font-size: 5vw;
+}
+
+.title-down {
+  margin-left: 8rem;
+}
+
+.motionTitle {
+  color: #000;
+  background: var(--gold);
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 4vw;
+}
+
+.FrontEndTitle {
+  color: #000;
+  background: var(--batengan);
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 4.5vw;
+}
+
+.reactIcon {
+  margin-top: 12%;
+  margin-left: 41.5%;
+  width: 9vw;
+}
+
+.word,
+.char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.imgHome {
+  position: relative;
+  top: -7rem;
+  right: 5rem;
+  justify-self: end;
+  width: 250px;
+  height: 250px;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
+.imgHome img {
+  height: 120%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.chars7 {
+  transform: rotate(360deg);
+}
+
+.shape {
+  z-index: 1;
+}
+
+.btn-hero {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btn-hero a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+@media (max-width: 700px) {
+  .FrontEndTitle,
+  .motionTitle {
+    font-size: 2rem;
+  }
+  .title h1 {
+    font-size: 2.5rem;
+  }
+  .title-down {
+    margin-left: 1rem;
+  }
+  .imgHome {
+    top: 1rem;
+    left: -1rem;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  .btn-hero {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    top: 35%;
+    left: 50%;
+  }
+  .shape {
+    display: none;
+  }
+}

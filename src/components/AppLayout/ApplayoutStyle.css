@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#smooth-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  #smooth-wrapper {
+    height: auto;
+    overflow: visible;
+  }
+
+  #smooth-content {
+    min-height: auto;
+  }
+
+  section {
+    min-height: auto;
+  }
+}

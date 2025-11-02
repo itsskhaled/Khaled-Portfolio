@@ -1,0 +1,33 @@
+nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  justify-self: center;
+  padding: 1rem;
+  background: #000;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 1vw, 1.25rem);
+}
+
+
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    top: 9rem;
+    text-align: center;
+  }
+  .menuMobile {
+    display: block;
+  }
+}
