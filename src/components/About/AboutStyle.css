@@ -1,6 +1,6 @@
 #about {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(var(--vh) * 100);
   /* background: #000; */
 }
 
@@ -15,19 +15,19 @@
 
 .contentAbout {
   width: auto;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   background: #000;
 }
 
 .box1 {
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   color: black;
 }
 
 .box2 {
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   background-color: white;
   overflow: hidden;
 }

@@ -135,7 +135,7 @@ function Navbar() {
             duration: 1,
             scrollTo: {
                 y: target,
-                offsetY: 80,
+                offsetY: 100,
             },
             ease: "power3.out",
         });

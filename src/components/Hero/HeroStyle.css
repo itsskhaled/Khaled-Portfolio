@@ -1,12 +1,12 @@
 #hero {
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   width: 100%;
   background: #000;
 }
 
 .containerHero {
   width: 90vw;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   justify-self: center;
   overflow: visible;
 }

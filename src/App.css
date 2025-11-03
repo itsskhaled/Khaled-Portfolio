@@ -13,6 +13,35 @@
   }
 }
 
+html, body {
+  height: 100%;
+}
+
+#smooth-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  position: relative;
+  min-height: 100%;
+  transform: translate3d(0,0,0);
+  will-change: transform;
+}
+
+/* قاعدة عامة للسكاشن */
+.section {
+  min-height: calc(var(--vh) * 100);
+  width: 100%;
+  padding: clamp(1rem, 3vw, 3rem);
+}
+
+.ios section,
+.ios .section {
+  min-height: calc(var(--vh) * 100);
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

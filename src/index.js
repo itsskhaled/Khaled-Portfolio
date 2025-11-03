@@ -5,6 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Applayout from "./components/AppLayout/Applayout";
 
+function setVh() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+setVh();
+window.addEventListener('resize', setVh);
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+if (isIOS) {
+  document.documentElement.classList.add('ios');
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
