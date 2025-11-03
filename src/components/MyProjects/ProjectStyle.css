@@ -45,6 +45,13 @@
   text-align: center;
 }
 
+@media (min-width: 701px) and (max-width: 1366px) {
+  .card {
+  display: flex;
+  flex-direction: column;
+  }
+}
+
 @media (max-width: 700px) {
   .titleProjects {
     font-size: 5rem;

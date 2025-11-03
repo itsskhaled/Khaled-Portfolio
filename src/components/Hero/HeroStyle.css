@@ -104,6 +104,27 @@
 }
 
 
+@media (min-width: 701px) and (max-width: 1366px) {
+   .title h1 {
+    font-size: 3rem;
+  }
+  .title-down {
+    margin-left: 1.5rem;
+  }
+  .shape{
+    display: none;
+  }
+  .imgHome {
+    top: 25%;
+    left: .1rem;
+    width: 150px;
+    height: 150px;
+  }
+  .btn-hero {
+    top: 30%;
+  }
+}
+
 
 @media (max-width: 700px) {
   .FrontEndTitle,

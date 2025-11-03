@@ -72,8 +72,6 @@
   border-radius: 10px;
 }
 
-
-
 .box1 h2 {
   position: relative;
   left: 8rem;
@@ -122,33 +120,77 @@
   transform: rotate(15deg);
 }
 
-.wordHorizonral4 , .wordHorizonral5 , .wordHorizonral6 ,.wordHorizonral7{
+.wordHorizonral4,
+.wordHorizonral5,
+.wordHorizonral6,
+.wordHorizonral7 {
   position: relative;
   right: 5rem;
 }
-.wordHorizonral1 , .wordHorizonral3{
+.wordHorizonral1,
+.wordHorizonral3 {
   background: var(--gold);
   border-radius: 10px;
 }
 
-.wordHorizonral12, .wordHorizonral13 , .wordHorizonral15 , .wordHorizonral16 {
-   background: var(--gold);
-  border-radius: 10px;
-}
-
-.wordHorizonral17 ,.wordHorizonral18 {
+.wordHorizonral12,
+.wordHorizonral13,
+.wordHorizonral15,
+.wordHorizonral16 {
   background: var(--gold);
   border-radius: 10px;
 }
 
-.wordHorizonral18{
+.wordHorizonral17,
+.wordHorizonral18 {
+  background: var(--gold);
+  border-radius: 10px;
+}
+
+.wordHorizonral18 {
   position: relative;
   top: -1rem;
   transform: rotate(15deg);
 }
 
-@media (max-width: 700px) {
+@media (min-width: 701px) and (max-width: 1366px) {
+  .titleAbout {
+    font-size: 20vw;
+  }
+  .infoAbout {
+    width: 90vw;
+    font-size: 5vw;
+  }
+  .containerImge {
+    width: 250px;
+    height: 350px;
+    justify-self: end;
+    right: 1rem;
+  }
+  .textAnimate {
+    justify-self: start;
+    left: 1rem;
+  }
 
+  .box1 h2 {
+    position: relative;
+    left: 3rem;
+    width: 55vw;
+  }
+
+  .horizontalText {
+    font-size: 6vw;
+    width: 85vw;
+  }
+
+  .wordHorizonral18 {
+    top: 0.1rem;
+    right: 6rem;
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 700px) {
   .container {
     display: block;
     width: 100%;
@@ -182,7 +224,6 @@
 
   .textAnimate h1:nth-child(2) {
     justify-self: center;
-    margin-left: 0;
     font-size: 1rem;
     text-align: center;
     justify-self: center;
@@ -209,6 +250,6 @@
     height: 350px;
   }
   .content {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 }
