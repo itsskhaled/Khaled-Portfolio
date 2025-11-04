@@ -68,6 +68,21 @@ function Projects() {
                     }
                 });
             } else if (isMobile) {
+                const TimeLineProjects = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".titleProjects",
+                        start: "top center",
+                        end: "+=500",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+                TimeLineProjects.from(splitTitle.chars, {
+                    x: -100,
+                    opacity: 0,
+                    stagger: {
+                        each: 0.1
+                    },
+                });
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: containerProjectsRef.current,
