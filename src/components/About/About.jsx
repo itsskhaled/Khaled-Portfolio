@@ -127,11 +127,7 @@ function About() {
           tlHorizontal.from('.wordHorizonral3' , {
             y:100,
             ease:"power3.out",
-          }, "<")
-          tlHorizontal.from('.wordHorizonral18' , {
-            x:100,
-            ease:"power3.out"
-          })
+          }, "<");
 
           return () => {
             tlHorizontal.kill();

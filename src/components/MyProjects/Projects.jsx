@@ -20,25 +20,6 @@ function Projects() {
             smartWrap: true
         })
 
-        const TimeLineProjects = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".titleProjects",
-                start: "top center",
-                end: "+=500",
-                pin: true,
-                pinSpacing: false,
-                // markers: true,
-                toggleActions: "play none none reverse"
-            }
-        });
-
-        TimeLineProjects.from(splitTitle.chars, {
-            x: -100,
-            opacity: 0,
-            stagger: {
-                each: 0.1
-            },
-        });
 
         const mm = gsap.matchMedia();
         mm.add({
@@ -49,6 +30,25 @@ function Projects() {
             const { isDesktop, isMobile } = context.conditions;
 
             if (isDesktop) {
+                const TimeLineProjects = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".titleProjects",
+                        start: "top center",
+                        end: "+=500",
+                        pin: true,
+                        pinSpacing: false,
+                        toggleActions: "play none none reverse"
+                    }
+                });
+
+                TimeLineProjects.from(splitTitle.chars, {
+                    x: -100,
+                    opacity: 0,
+                    stagger: {
+                        each: 0.1
+                    },
+                });
+
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: containerProjectsRef.current,
@@ -56,7 +56,8 @@ function Projects() {
                         end: "+=500",
                         toggleActions: "play none none reverse"
                     }
-                })
+                });
+
                 tl.from(cardRef.current, {
                     y: 100,
                     opacity: 0,
@@ -65,7 +66,7 @@ function Projects() {
                     stagger: {
                         each: 0.15
                     }
-                })
+                });
             } else if (isMobile) {
                 const tl = gsap.timeline({
                     scrollTrigger: {

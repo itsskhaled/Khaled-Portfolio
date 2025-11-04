@@ -13,13 +13,21 @@ function Applayout({ children }) {
   const contentRef = useRef(null);
 
   useGSAP(() => {
-    ScrollSmoother.create({
-      wrapper: wrapperRef.current,
-      content: contentRef.current,
-      smooth: 2,
-      smoothTouch: 2,
-      effects: true,
-    });
+    const mm = gsap.matchMedia();
+    mm.add({
+      isDesktop: '(min-width : 1000px)',
+      isMobile: '(max-width : 700px)',
+    }, (context) => {
+      const { isDesktop, isMobile } = context.conditions;
+      if (isDesktop) {
+        ScrollSmoother.create({
+          wrapper: wrapperRef.current,
+          content: contentRef.current,
+          smooth: 2,
+          effects: true,
+        });
+      }
+    })
   });
 
   return (
